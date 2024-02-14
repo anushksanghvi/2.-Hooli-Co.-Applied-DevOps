@@ -7,14 +7,11 @@ public class IncomeTax_Calculator {
         double income = sc.nextDouble();
         double tax;
 
-        if (income<500000){
-            tax = 0;
-            System.out.println("0% tax you will have to pay");
+        if (income<750000){
+            tax = 0.1* income;
+            System.out.println("10% tax you will have to pay");
         }
-        else if (income>=500000 && income<1000000){
-            tax = 0.2 * income;
-            System.out.println("20% tax you will pay");
-        } 
+
         else{
             tax = 0.3 * income;
             System.out.println("30% tax you will pay");
