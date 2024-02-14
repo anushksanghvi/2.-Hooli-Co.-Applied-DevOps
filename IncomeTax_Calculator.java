@@ -11,7 +11,10 @@ public class IncomeTax_Calculator {
             tax = 0;
             System.out.println("0% tax you will have to pay");
         }
- 
+        else if (income>=500000 && income<1000000){
+            tax = 0.2 * income;
+            System.out.println("20% tax you will pay");
+        } 
         else{
             tax = 0.3 * income;
             System.out.println("30% tax you will pay");
@@ -20,8 +23,3 @@ public class IncomeTax_Calculator {
         System.out.println("Your tax is = Rs " + tax);
     }
 }
-        
-    
-
-
-
